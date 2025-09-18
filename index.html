@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FPS Demo</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+    #ui {
+      position: fixed; top: 10px; left: 10px; color: white; font-family: sans-serif;
+    }
+    #crosshair {
+      position: fixed;
+      top: 50%; left: 50%;
+      width: 10px; height: 10px;
+      margin-left: -5px; margin-top: -5px;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+    button {
+      padding: 10px; margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="ui">
+    <div id="crosshair"></div>
+    <button id="startBtn">Click to Start</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/examples/js/controls/PointerLockControls.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
